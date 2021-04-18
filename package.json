@@ -1,0 +1,25 @@
+{
+  "name": "jukebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tredizzzzle/jukebox.git"
+  },
+  "author": "stanleyphuynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tredizzzzle/jukebox/issues"
+  },
+  "homepage": "https://github.com/Tredizzzzle/jukebox#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.0",
+    "discord.js": "^12.5.3",
+    "distube": "^2.8.12",
+    "ffmpeg-static": "^4.3.0"
+  }
+}
