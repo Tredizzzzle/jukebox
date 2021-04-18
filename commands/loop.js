@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 
   let mode = bot.distube.setRepeatMode(message, parseInt(args[0]));
   mode = mode ? (mode == 2 ? "QUEUE" : "SONG") : "OFF";
-  message.channel.send("***LOOPING***: **`" + mode + "`**");
+  message.channel.send("**LOOPING**: **`" + mode + "`**");
 };
 
 module.exports.config = {
