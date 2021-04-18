@@ -24,6 +24,7 @@
     "discord.js": "^12.5.3",
     "distube": "^2.8.12",
     "dotenv": "^8.2.0",
-    "ffmpeg-static": "^4.3.0"
+    "ffmpeg-static": "^4.3.0",
+    "nodemon": "^2.0.7"
   }
 }
