@@ -45,4 +45,4 @@ bot.aliases = new Discord.Collection();
 
 loadCommands(bot);
 
-bot.login(token);
+bot.login(process.env.token);
