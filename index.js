@@ -6,6 +6,8 @@ const config = require("./settings.json");
 const { loadCommands } = require("./utils/loadCommands");
 const DisTube = require("distube");
 
+require("dotenv").config();
+
 bot.distube = new DisTube(bot, { emitNewSongOnly: true, leaveOnFinish: true });
 bot.distube
   .on("initQueue", (queue) => {
@@ -32,7 +34,9 @@ bot.distube
       `**Added** \`${playlist.name} (${playlist.songs.length} **songs**)\` **to the queue**\n${queue}`
     )
   )
-  .on("empty", (message) => message.channel.send("***Leaving the channel*** ✌️"))
+  .on("empty", (message) =>
+    message.channel.send("***Leaving the channel*** ✌️")
+  )
   .on("finish", (message) =>
     message.channel.send("***No more songs in queue*** 💂‍♂️")
   );
@@ -44,4 +48,4 @@ bot.aliases = new Discord.Collection();
 
 loadCommands(bot);
 
-bot.login(config.token);
+bot.login(process.env.token);
