@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     );
 
   let mode = bot.distube.toggleAutoplay(message);
-  message.channel.send("**AUTOPLAY**" + (mode ? "**`ON`**" : "`OFF`**") + "`");
+  message.channel.send("**AUTOPLAY:**" + (mode ? "**\`ON\`**" : "**\`OFF\`**") + "`");
 };
 
 module.exports.config = {
