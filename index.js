@@ -7,7 +7,7 @@ const DisTube = require("distube");
 
 require("dotenv").config();
 
-bot.distube = new DisTube(bot, { emitNewSongOnly: true });
+bot.distube = new DisTube(bot, { emitNewSongOnly: true , leaveOnStop = false});
 bot.distube
   .on("initQueue", (queue) => {
     queue.autoplay = false;
