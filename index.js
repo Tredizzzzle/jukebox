@@ -5,6 +5,8 @@ const bot = new Discord.Client({
 const { loadCommands } = require("./utils/loadCommands");
 const DisTube = require("distube");
 
+require("dotenv").config();
+
 bot.distube = new DisTube(bot, { emitNewSongOnly: true, leaveOnFinish: true });
 bot.distube
   .on("initQueue", (queue) => {
