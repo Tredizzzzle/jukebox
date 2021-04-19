@@ -7,7 +7,7 @@ const DisTube = require("distube");
 
 require("dotenv").config();
 
-bot.distube = new DisTube(bot, { emitNewSongOnly: true, leaveOnFinish: true });
+bot.distube = new DisTube(bot, { emitNewSongOnly: true });
 bot.distube
   .on("initQueue", (queue) => {
     queue.autoplay = false;
@@ -34,10 +34,10 @@ bot.distube
     )
   )
   .on("empty", (message) =>
-    message.channel.send("***Leaving the channel*** ✌️")
+    message.channel.send("***LEAVING CHANNEL*** ✌️")
   )
   .on("finish", (message) =>
-    message.channel.send("***No more songs in queue*** 💂‍♂️")
+    message.channel.send("***NO MORE SONGS IN QUEUE*** 💂‍♂️")
   );
 
 require("./utils/loadEvents")(bot);
