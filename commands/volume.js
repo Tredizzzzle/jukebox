@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     );
   let queue = await bot.distube.getQueue(message);
   bot.distube.setVolume(message, args[0]);
-  message.channel.send(`**VOLUME: \`${queue.volume}\`**`);
+  message.channel.send(`**VOLUME: \`${queue.volume}%\`**`);
 };
 
 module.exports.config = {
