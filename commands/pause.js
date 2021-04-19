@@ -1,5 +1,3 @@
-const { MessageManager } = require("discord.js");
-
 module.exports.run = async (bot, message, args) => {
   if (!message.member.voice.channel)
     return message.channel.send(
