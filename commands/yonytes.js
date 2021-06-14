@@ -1,10 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-    if (!message.member.voice.channel)
-      return message.channel.send(
-        "You must be in a voice channel to use this command."
-      );
-  
-    message.channel.send(`⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⡀
+  message.channel.send(`⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⡀
     ⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⡸⠱⡀
     ⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⣠⣴⠖⢀⢀⢀⢀⢀⢀⣠⡆⢀⢀⢠⠃⢀⣧
     ⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⣤⣾⣿⣿⠋⢀⢀⢀⢀⢀⣠⠞⢁⡇⢀⢠⠏⢀⢀⢹
@@ -49,10 +44,9 @@ module.exports.run = async (bot, message, args) => {
     ⢀⢀⢀⢀⢀⢀⣼⣿⣿⣿⣿⣿⢒⣒⣂⣀⣉⣦⡀⠈⠉⠉⠙⠛⠛⠛⠋⠉⠉⠉⠉⠁⢸⠁
     ⢀⢀⢀⢀⢀⢀⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⡉⠉⠙⠛⠛⠛⠛⠛⠓⠒⠒⠒⠊
     ⢀⢀⢀⢀⢀⢀⠇⢀⠈⠉⠛⠛⠛⠛⠛⠛⠉⠁⢀⠠⡇`);
-  };
-  
-  module.exports.config = {
-    name: "yonytes",
-    aliases: ["yt"],
-  };
-  
+};
+
+module.exports.config = {
+  name: "yonytes",
+  aliases: ["yt"],
+};
